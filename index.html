@@ -9,9 +9,15 @@
 </head>
 <body>
   <div class="container">
+    <!-- Heading -->
     <div class="heading">
-    <img src="./images/mistletoe.svg" height="70" class="mistletoe"><h1>Sterling's Xmas Dranks</h1><img src="./images/mistletoe.svg" height="70" class="mistletoe"></div>
+      <img src="./images/mistletoe.svg" class="mistletoe">
+      <h1>Sterling's Xmas Dranks</h1>
+      <img src="./images/mistletoe.svg" class="mistletoe">
+    </div>
+    <!-- Presents Layout -->
     <div class="presents__layout">
+      <!-- Present #1 -->
       <div class="present__container">
         <img src="./images/bow.svg" class="present__bow">
         <div class="present__box--v2">
@@ -20,12 +26,12 @@
             <div class="drink__card--v2 drink__card--hide" id="drink-card">
               <img src="./images/peppermint.jpg" height="180" class="drink__image">
               <p class="drink__name--v2">Peppermint Hot<br>Toddy</p>
-              <button class="drink__button">View Recipe</button>
+              <button class="drink__button" id="view-recipe">View Recipe</button>
+            </div>
           </div>
         </div>
-        </div>
       </div>
-      <div class="present__container">
+      <!--<div class="present__container">
         <img src="./images/bow.svg" class="present__bow">
         <div class="present__box--v2">
           <div class="present__ribbon--v2">
@@ -112,7 +118,27 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+    </div>
+  </div>
+  <!-- Present #1 Modal -->
+  <div class="modal__container modal__container--hide" id="modal">
+    <div class="modal__content">
+      <span class="modal__close">&times;</span>
+      <h2 class="modal__drink-name">Peppermint Hot Toddy</h2>
+      <img src="./images/peppermint.jpg" height="300" class="modal__image">
+      <h2 class="modal__heading">Ingredients</h2>
+      <ul>
+        <li>Whiskey</li>
+        <li>Tea</li>
+        <li>Peppermint</li>
+      </ul>
+      <h2 class="modal__heading">Preparation</h2>
+      <ol>
+        <li>Heat water</li>
+        <li>Pour whiskey into glass</li>
+        <li>Enjoy!!</li>
+      </ol>
     </div>
   </div>
   <script src="snow.js"></script>
