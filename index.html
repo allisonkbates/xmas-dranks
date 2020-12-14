@@ -5,46 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/svg" sizes="32x32" href="./images/mistletoe.svg"> 
 	<link rel="stylesheet" href="styles.css">
-  <title>Sterling's Xmas Drink List</title>
+  <title>Sterling's Xmas Dranks</title>
 </head>
 <body>
   <div class="container">
-    <h1>Sterling's Xmas Dranks</h1>
-    <div class="drinks__layout">
+    <div class="heading">
+    <img src="./images/mistletoe.svg" height="70" class="mistletoe"><h1>Sterling's Xmas Dranks</h1><img src="./images/mistletoe.svg" height="70" class="mistletoe"></div>
+    <div class="presents__layout">
       <div class="present__container">
         <img src="./images/bow.svg" class="present__bow">
-        <div class="present__box">
-          <div class="present__ribbon">
-            <div class="drink__card">
-              <p class="drink__name">Peppermint Hot<br>Toddy</p>
-              <img src="./images/peppermint.jpg" height="160" class="drink__image">
-              <div class="row">
-                <p class="drink__rating">Basic Rating:</p>
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-              </div>
-            </div>
+        <div class="present__box--v2">
+          <div class="present__ribbon--v2">
+            <button class="present__button" id="open-present">Open Gift</button>
+            <div class="drink__card--v2 drink__card--hide" id="drink-card">
+              <img src="./images/peppermint.jpg" height="180" class="drink__image">
+              <p class="drink__name--v2">Peppermint Hot<br>Toddy</p>
+              <button class="drink__button">View Recipe</button>
           </div>
+        </div>
         </div>
       </div>
       <div class="present__container">
         <img src="./images/bow.svg" class="present__bow">
-        <div class="present__box">
-          <div class="present__ribbon">
-            <div class="drink__card">
-              <p class="drink__name">Xmas Snowstorm Margarita</p>
-              <img src="./images/xmas_snowstorm_margarita.jpg" height="160" class="drink__image">
-              <div class="row">
-                <p class="drink__rating">Basic Rating:</p>
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-                <img src="./images/candycane.png" height="30" class="candycane">
-              </div>
+        <div class="present__box--v2">
+          <div class="present__ribbon--v2">
+            <button class="present__button" id="open-present">Open Present</button>
+            <div class="drink__card--v2 drink__card--hide drink-card">
+              <img src="./images/xmas_snowstorm_margarita.jpg" height="180" class="drink__image">
+              <p class="drink__name--v2">Xmas Snowstorm Margarita</p>
             </div>
           </div>
         </div>
@@ -128,4 +116,5 @@
     </div>
   </div>
   <script src="snow.js"></script>
+  <script src="index.js"></script>
 </body>
