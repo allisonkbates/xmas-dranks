@@ -41,15 +41,7 @@ h1 {
 	padding: 0px 0px;
 	height: 40px;
 }
-@media only screen and (min-width: 768px) {
-	h1 {
-		margin: 16px;
-	}
 
-	.mistletoe {
-		height: 70px;
-	}
-}
 .presents__layout {
 	display: flex;
 	justify-content: space-around;
@@ -69,11 +61,7 @@ h1 {
 	margin-left: 20px;
 }
 
-.present__bow--green {
-	fill: var(--darkGreen);
-}
-
-.present__box--v2 {
+.present__box {
 	height: 325px;
 	width: 325px;
 	background-color: var(--lightGreen);
@@ -85,33 +73,7 @@ h1 {
 	margin-top: -62px;
 }
 
-.present__box {
-	height: 350px;
-	width: 300px;
-	background-color: var(--lightGreen);
-	border-radius: 3px;
-	margin: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: -62px;
-}
-
-.present__box--red {
-	background-color: var(--darkRed);
-}
-
 .present__ribbon {
-  width: 300px;
-  height: 350px;
-  background: linear-gradient(to bottom, transparent 45%, var(--darkRed) 45%, var(--darkRed) 55%,  transparent 55%),
-		linear-gradient(to right, transparent 45%, var(--darkRed) 45%, var(--darkRed) 55%, transparent 55%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.present__ribbon--v2 {
   width: 325px;
   height: 325px;
   background: linear-gradient(to bottom, transparent 45%, var(--darkRed) 45%, var(--darkRed) 55%,  transparent 55%),
@@ -119,11 +81,6 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.present__ribbon--green {
-	background: linear-gradient(to bottom, transparent 45%, var(--darkGreen) 45%, var(--darkGreen) 55%,  transparent 55%),
-	linear-gradient(to right, transparent 45%, var(--darkGreen) 45%, var(--darkGreen) 55%, transparent 55%);
 }
 
 .present__button {
@@ -184,13 +141,6 @@ h1 {
 }
 
 .drink__card {
-	height: 300px;
-	width: 255px;
-	background-color: white;
-	border-radius: 5px;
-}
-
-.drink__card--v2 {
 	height: 290px;
 	width: 290px;
 	background-color: white;
@@ -204,16 +154,7 @@ h1 {
 	display: none;
 }
 
-.drink__name {
-	font-family: 'Lobster', cursive;
-	font-size: 24px;
-	text-align: center;
-	color: var(--darkRed);
-	margin-top: 1.2em;
-	margin-bottom: 8px;
-}
-
-.drink__name--v2, .modal__heading, .modal__drink-name {
+.drink__name, .modal__heading, .modal__drink-name {
 	font-family: 'Lobster', cursive;
 	font-size: 24px;
 	text-align: center;
@@ -246,23 +187,6 @@ h1 {
 	background-color: #a01b17;
 }
 
-.row {
-	display: flex;
-	align-items: center;
-}
-
-.drink__rating {
-	font-family: 'Lobster', cursive;
-	font-size: 24px;
-	text-align: center;
-	color: var(--darkRed);
-	margin: 0px 4px;
-}
-
-.candycane {
-	margin: 2px 3px 0px;
-}
-
 .modal__container {
 	background-color: white;
 	width: 375px;
@@ -276,11 +200,6 @@ h1 {
 	transform: translate(-50%, -50%);
 	border-radius: 0px;
 	border: 1px solid white;
-}
-@media only screen and (min-width: 768px) {
-	.modal__container {
-		width: 600px;
-	}
 }
 
 .modal__container--hide {
@@ -313,4 +232,16 @@ h1 {
 	object-fit: cover;
 }
 
+@media only screen and (min-width: 768px) {
+	h1 {
+		margin: 16px;
+	}
 
+	.mistletoe {
+		height: 70px;
+	}
+
+	.modal__container {
+		width: 600px;
+	}
+}
