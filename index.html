@@ -22,22 +22,59 @@
         <img src="./images/bow.svg" class="present__bow">
         <div class="present__box">
           <div class="present__ribbon">
-            <button class="present__button" id="open-present">Open Gift</button>
-            <div class="drink__card drink__card--hide" id="drink-card">
+            <button class="present__button open-gift-button" id="open-present" data-key="gift-one">Open Gift</button>
+            <div class="drink__card drink__card--hide" id="drink-card" data-key="gift-one">
+              <span class="drink__close close-drink" data-key="gift-one">&times;</span>
               <img src="./images/peppermint.jpg" height="180" class="drink__image">
               <p class="drink__name">Peppermint Hot<br>Toddy</p>
-              <button class="drink__button" id="view-recipe">View Recipe</button>
+              <button class="drink__button view-recipe-button" id="view-recipe" data-key="recipe-one">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Present #2 -->
+      <div class="present__container">
+        <img src="./images/bow.svg" class="present__bow">
+        <div class="present__box">
+          <div class="present__ribbon">
+            <button class="present__button open-gift-button" id="open-present" data-key="gift-two">Open Gift</button>
+            <div class="drink__card drink__card--hide" id="drink-card" data-key="gift-two">
+              <span class="drink__close close-drink" data-key="gift-two">&times;</span>
+              <img src="./images/peppermint.jpg" height="180" class="drink__image">
+              <p class="drink__name">Grinch Drink</p>
+              <button class="drink__button view-recipe-button" id="view-recipe" data-key="recipe-two">View Recipe</button>
             </div>
           </div>
         </div>
       </div>
       <!--<div class="present__container"> -->
-    </div>
+      </div>
   </div>
   <!-- Present #1 Modal -->
-  <div class="modal__container modal__container--hide" id="modal">
+  <div class="modal__container modal__container--hide" id="modal" data-key="recipe-one">
     <div class="modal__content">
-      <span class="modal__close">&times;</span>
+      <span class="modal__close close-button" data-key="recipe-one">&times;</span>
+      <h2 class="modal__drink-name">Peppermint Hot Toddy</h2>
+      <img src="./images/peppermint.jpg" height="300" class="modal__image">
+      <h2 class="modal__heading">Ingredients</h2>
+      <ul>
+        <li>Whiskey</li>
+        <li>Tea</li>
+        <li>Peppermint</li>
+      </ul>
+      <h2 class="modal__heading">Preparation</h2>
+      <ol>
+        <li>Heat water</li>
+        <li>Pour whiskey into glass</li>
+        <li>Enjoy!!</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Present #2 Modal -->
+  <div class="modal__container modal__container--hide" id="modal" data-key="recipe-two">
+    <div class="modal__content">
+      <span class="modal__close close-button" data-key="recipe-two">&times;</span>
       <h2 class="modal__drink-name">Peppermint Hot Toddy</h2>
       <img src="./images/peppermint.jpg" height="300" class="modal__image">
       <h2 class="modal__heading">Ingredients</h2>
