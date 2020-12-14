@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
 
 :root {
@@ -16,7 +17,7 @@ body {
 
 .container {
 	background-color: var(--darkBlue);
-	padding: 60px 0px;
+	padding: 60px 0px 300px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -189,10 +190,8 @@ h1 {
 
 .modal__container {
 	background-color: white;
-	width: 375px;
-  max-width: 100%;
-  height: 700px;
-  max-height: 100%;
+	width: 100%;
+  height: 100%;
   position: fixed;
   z-index: 100;
   left: 50%;
@@ -200,6 +199,7 @@ h1 {
 	transform: translate(-50%, -50%);
 	border-radius: 0px;
 	border: 1px solid white;
+	padding-bottom: 8px;
 }
 
 .modal__container--hide {
@@ -213,10 +213,10 @@ h1 {
 }
 
 .modal__close {
-	font-size: 24px;
+	font-size: 32px;
 	color: var(--darkRed);
 	align-self: flex-end;
-	padding-right: 8px;
+	padding: 8px 16px 0px;
 }
 
 .modal__drink-name {
@@ -230,6 +230,23 @@ h1 {
 .modal__image {
 	width: 100%;
 	object-fit: cover;
+	margin: 24px 0px;
+}
+
+ol, ul {
+	padding-left: 24px;
+	margin-left: 48px;
+}
+
+li {
+	font-family: 'Slabo 27px', sans-serif;
+	font-size: 20px;
+	color: #555555;
+}
+
+::marker {
+	color: var(--darkRed);
+	font-size: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -242,6 +259,7 @@ h1 {
 	}
 
 	.modal__container {
-		width: 600px;
+		width: 60%;
+		height: 100%;
 	}
 }
