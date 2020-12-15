@@ -51,7 +51,7 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0px 20px 20px;
+	margin: 0px 0px 40px;
 }
 
 .present__bow {
@@ -165,7 +165,7 @@ h1 {
 	padding-bottom: 2px;
 }
 
-.drink__name, .modal__heading, .modal__drink-name {
+.drink__name, .modal__heading, .modal__drink-name, .modal__rating-heading {
 	font-family: 'Lobster', cursive;
 	font-size: 24px;
 	text-align: center;
@@ -245,6 +245,23 @@ h1 {
 	cursor: pointer;
 }
 
+.modal__rating {
+	border: 2px dashed var(--darkRed);
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.modal__candycane {
+	padding-left: 16px;
+}
+
 .modal__drink-name {
 	align-self: center;
 }
@@ -291,6 +308,10 @@ li {
 		height: 70px;
 	}
 
+	.present__container {
+		margin: 0px 20px 40px;
+	}
+
 	.modal__container {
 		height: 600px;
 	}
@@ -300,11 +321,21 @@ li {
 		align-self: center;
 	}
 
+	.modal__video {
+		border: 4px dashed var(--darkRed);
+		padding: 5px;
+		border-radius: 5px;	
+	}
+
 	.modal__heading, ol, ul {
 		margin-left: 10%;
 	}
 
 	li {
 		margin-left: 48px;
+	}
+
+	.candycane {
+		padding-left: 32px;
 	}
 }

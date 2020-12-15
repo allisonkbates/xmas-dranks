@@ -5,12 +5,8 @@ let closeDrinks = document.querySelectorAll('.close-drink');
 
 function showDrink(e) {
 	const giftNumber = e.target.dataset.key;
-	const buttonNumber = giftNumber.replace('gift', 'button');
-	console.log(giftNumber, buttonNumber);
 	const drinkCard = document.querySelector(`div[data-key="${giftNumber}"]`);
-	console.log(drinkCard);
 	const openButton = document.querySelector(`button[data-key="${giftNumber}"]`);
-	console.log(openButton);
   drinkCard.classList.toggle('drink__card--hide');
 	openButton.classList.toggle('present__button--hide');
 }
