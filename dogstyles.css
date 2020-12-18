@@ -96,7 +96,7 @@ h1 {
 }
 
 .present-lid, .present-box {
-  animation: shake s ease-in-out infinite;
+  animation: shake 3s ease-in-out infinite;
 }
 
 @keyframes shake {
